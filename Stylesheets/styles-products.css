@@ -1,0 +1,346 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+
+
+/*This is meant for everything
+  Overrides mobile, tablet and desktop */
+.page {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.section {
+  width: 100%;
+  height: 300px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.menu {
+  height: 70px;
+}
+
+.header {
+  height: auto;
+  justify-content: inherit;
+  align-items: inherit;
+}
+
+.photo img {
+  width: 100%;
+  display: block;
+}
+
+.content {
+  background-color: #ffffff;
+  height: auto;
+  justify-content: inherit;
+  align-items: inherit;
+}
+
+
+
+
+/*Photo hover stuff*/
+
+.section.feature-1 .photo:hover .overlay,
+.section.feature-2 .photo:hover .overlay,
+.section.feature-3 .photo:hover .overlay {
+  opacity: 1;
+  z-index: 10;
+  transition: 100ms;
+}
+
+.section.feature-1 .photo,
+.section.feature-2 .photo,
+.section.feature-3 .photo {
+  opacity: 0.5;
+}
+.section.feature-1 .photo:hover,
+.section.feature-2 .photo:hover,
+.section.feature-3 .photo:hover {
+  opacity: 1;
+  transition: 0.8s;
+}
+
+
+
+
+
+
+.feature-1 {
+  height: auto;
+  justify-content: inherit;
+  align-items: inherit;
+}
+
+.feature-2 {
+  height: auto;
+  justify-content: inherit;
+  align-items: inherit;  }
+
+.feature-3 {
+  height: auto;
+  justify-content: inherit;
+  align-items: inherit;  }
+
+.feature-4 {
+  height: auto;
+  justify-content: inherit;
+  align-items: inherit;  }
+
+.sign-up {
+  background-color: #D6E9FE;
+}
+.footer-1 {
+  height: 80px;
+  /*position: fixed;*/
+  bottom: 5cm;
+}
+.footer {
+  background-color: #d2b48c;
+  height: 80px;
+  /*position: fixed;*/
+  bottom: 0;
+}
+
+
+
+.illustration img {
+  width: 95%;
+  display: flex;
+}
+
+
+#anna {
+  text-align: center;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  color: rgb(82, 26, 26);
+}
+
+
+
+
+
+
+
+
+
+/* Mobile Styles */
+@media only screen and (max-width: 400px) {
+  body {
+    padding: 2.25%;
+    margin-left: 2.25%;
+    margin-right: 2.25%;
+    margin-bottom: 2.25%;
+    margin-top: 2.25%;
+  }
+}
+
+
+
+
+/* Tablet Styles */
+@media only screen and (min-width: 401px) and (max-width: 960px) {
+  .feature-1,
+  .feature-2 {
+  width: 50%;
+  padding: 2.25%;
+  }
+
+  .feature-3 {
+    width: 50%;
+    align-content: center;
+    align-items: center;
+    padding: 2.25%;
+    margin-left: 25%;
+    margin-right: 25%;
+    margin-bottom: 0;
+    margin-top: 0;
+  }
+
+  .content {
+    padding-top: 0;
+    padding-left: 2.25%;
+    padding-right: 2.25%;
+    padding-bottom: 2.25%;
+  }
+
+  .footer {
+    bottom: 0;
+  }
+  .footer-1 {
+    bottom: 5cm;
+  }
+
+
+}
+
+
+
+
+/* Desktop Styles */
+@media only screen and (min-width: 961px) {
+  .page {
+    width: 960px;
+    margin: 0 auto;
+  }
+  .feature-1,
+  .feature-2,
+  .feature-3 {
+    width: 33.3%;
+    order: 1;
+    padding: 2.25%;
+  }
+  .header {
+    height: 400px;
+    padding-top: 0%;
+    padding-left: 2.25%;
+    padding-right: 2.25%;
+    padding-bottom: 2.25%;
+  }
+  .content {
+    order: 3;
+    padding-top: 0;
+    padding-left: 2.25%;
+    padding-right: 2.25%;
+    padding-bottom: 2.25%;
+  }
+  
+  .feature-4 {
+    display: none;
+  }
+  .footer-1{
+    order: 4;
+    bottom: 5cm;
+  }
+  .footer{
+    order: 5;
+    bottom: 0;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*Nav bar CSS*/
+nav {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  vertical-align: middle;
+  top: 0;
+}
+nav ul {
+  padding: 0;
+  margin: 0;
+  width: inherit;
+}
+nav ul li {
+  display: inline-block; /* Arrange list items in horizontal line */
+  list-style-type: none; /* We don't want bullets on our items */
+  margin: 0;
+  text-align: center;
+  padding: 10px 0; /* Sets height of nav bar */
+  width: 18.8%;
+}
+nav ul li:hover {
+  background: #ffffff; /* Items' hover bg color */
+  text-decoration: underline;
+}
+nav ul li a {
+    color: rgb(82, 26, 26);
+    font-size: 20px;
+    text-decoration: none;
+    padding: 8px;
+}
+nav ul li a:hover {
+  color: #613434;
+  text-decoration: none;
+}
+nav ul li a:active {
+  text-decoration: underline;
+}
+
+nav ul img {
+  display: inline-block; /* Arrange list items in horizontal line */
+  list-style-type: none; /* We don't want bullets on our items */
+  margin: 0;
+  text-align: center;
+  /*padding: 0px 0; /* Sets height of nav bar */
+  margin-top: 0px; /* Sets height of nav bar */
+  margin-left: 0px;
+  margin-bottom: 5px;
+  margin-right: 0px;
+  width: 15%;
+  align-items: center;
+  vertical-align: -webkit-baseline-middle;
+}
+
+a {
+  text-decoration: none;
+  text-decoration-color: black;
+  color: black;
+  z-index: auto;
+}
+
+
+
+
+
+
+
+
+p {
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  color: rgb(82, 26, 26);
+  bottom: 1.5cm;
+  padding: 2.25%;
+}
+
+
+
+
+
+
+
+
+
+.overlay {
+  display: block;
+  position: absolute;
+  background: rgb(0, 0, 0);
+  color: #f1f1f1; 
+  width: 100px;
+  transition: .5s ease;
+  opacity:0;
+  color: white;
+  font-size: 15px;
+  padding: 15px;
+  text-align: center;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  -webkit-transform: none;
+  -ms-transform: none;
+  transform: none;
+  z-index: -1;
+}
